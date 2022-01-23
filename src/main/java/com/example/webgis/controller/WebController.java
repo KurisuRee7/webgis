@@ -38,6 +38,7 @@ public class WebController{
     }
 
     @RequestMapping(value = "/SiteAll", method = RequestMethod.GET)
+    @ResponseBody
     public List<Site> findBySiteAge() {
         System.out.println("查询所有数据:");
         return siteService.findAll();
