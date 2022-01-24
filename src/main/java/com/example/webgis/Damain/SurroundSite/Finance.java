@@ -1,9 +1,5 @@
 package com.example.webgis.Damain.SurroundSite;
 
-public class Finance {
-    public SurroundSite Finance;
+public class Finance extends SurroundSite{
 
-    public Finance(SurroundSite finance) {
-        Finance = finance;
-    }
 }
