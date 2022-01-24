@@ -1,21 +1,22 @@
-package com.example.webgis.Service;
+package com.example.webgis.Service.SurroundSiteServiceImpl;
 
-import com.example.webgis.Dao.SiteDao;
-import com.example.webgis.Damain.Site;
+import com.example.webgis.Dao.SurroundSiteDao.FinanceDao;
+import com.example.webgis.Damain.SurroundSite.Finance;
+import com.example.webgis.Service.SurroundSiteService.FinanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class SiteServiceImpl implements SiteService {
+public class FinanceServiceImpl implements FinanceService {
     @Autowired
-    private SiteDao site;
+    private FinanceDao fin;
 
     @Override
-    public boolean addSite(Site site1) {
+    public boolean addFinance(Finance fin1) {
         boolean flag=false;
         try{
-            site.addSite(site1);
+            fin.addFin(fin1);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -24,10 +25,10 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public boolean updateSite(Site site1) {
+    public boolean updateFinance(Finance fin1) {
         boolean flag=false;
         try{
-            site.updateSite(site1);
+            fin.updateFin(fin1);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -36,10 +37,10 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public boolean deleteSite(int id) {
+    public boolean deleteFinance(int FID) {
         boolean flag=false;
         try{
-            site.deleteSite(id);
+            fin.deleteFin(FID);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -48,13 +49,13 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public Site findSiteByName(String name) {
-        return site.findSiteByName(name);
+    public Finance findFinanceByName(String Name) {
+        return fin.findFinanceByName(Name);
     }
 
 
     @Override
-    public List<Site> findAll() {
-        return site.findAll();
+    public List<Finance> findAll() {
+        return fin.findAll();
     }
 }

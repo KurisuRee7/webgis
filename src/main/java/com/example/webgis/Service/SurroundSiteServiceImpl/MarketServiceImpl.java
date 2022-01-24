@@ -1,21 +1,22 @@
-package com.example.webgis.Service;
+package com.example.webgis.Service.SurroundSiteServiceImpl;
 
-import com.example.webgis.Dao.SiteDao;
-import com.example.webgis.Damain.Site;
+import com.example.webgis.Dao.SurroundSiteDao.MarketDao;
+import com.example.webgis.Damain.SurroundSite.Market;
+import com.example.webgis.Service.SurroundSiteService.MarketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class SiteServiceImpl implements SiteService {
+public class MarketServiceImpl implements MarketService {
     @Autowired
-    private SiteDao site;
+    private MarketDao mar;
 
     @Override
-    public boolean addSite(Site site1) {
+    public boolean addMarket(Market fin1) {
         boolean flag=false;
         try{
-            site.addSite(site1);
+            mar.addMar(fin1);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -24,10 +25,10 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public boolean updateSite(Site site1) {
+    public boolean updateMarket(Market fin1) {
         boolean flag=false;
         try{
-            site.updateSite(site1);
+            mar.updateMar(fin1);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -36,10 +37,10 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public boolean deleteSite(int id) {
+    public boolean deleteMarket(int FID) {
         boolean flag=false;
         try{
-            site.deleteSite(id);
+            mar.deleteMar(FID);
             flag=true;
         }catch(Exception e){
             e.printStackTrace();
@@ -48,13 +49,13 @@ public class SiteServiceImpl implements SiteService {
     }
 
     @Override
-    public Site findSiteByName(String name) {
-        return site.findSiteByName(name);
+    public Market findMarketByName(String Name) {
+        return mar.findMarketByName(Name);
     }
 
 
     @Override
-    public List<Site> findAll() {
-        return site.findAll();
+    public List<Market> findAll() {
+        return mar.findAll();
     }
 }

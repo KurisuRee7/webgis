@@ -16,7 +16,7 @@ public interface SiteDao {
     /**
      * 修改数据
      */
-    @Update("update site set name=#{name},password=#{password} where id=#{id}")
+    @Update("update gz_sites set code=#{code},name=#{name},lng==#{lng},lat==#{lat},adname==#{adname},adcode=#{adcode},address==#{address},type==#{type} where id=#{id}")
     void updateSite(Site site);
 
     /**
@@ -30,7 +30,7 @@ public interface SiteDao {
      *
      */
     @Select("select id,code,name,lng,lat,adname,adcode,address,type from gz_sites where name=#{name}")
-    Site findByName(@Param("name") String name);
+    Site findSiteByName(@Param("name") String name);
 
     /**
      * 查询所有数据

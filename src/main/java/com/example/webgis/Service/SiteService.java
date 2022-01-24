@@ -5,14 +5,14 @@ import java.util.List;
 
 public interface SiteService {
     /**
-     * 新增用户
+     * 新增地标
      * @param site
      * @return
      */
     boolean addSite(Site site);
 
     /**
-     * 修改用户
+     * 修改地标
      * @param site
      * @return
      */
@@ -20,14 +20,14 @@ public interface SiteService {
 
 
     /**
-     * 删除用户
+     * 删除地标
      * @param id
      * @return
      */
     boolean deleteSite(int id);
 
     /**
-     * 根据名字查询用户信息
+     * 根据名字查询地标信息
      * @param name
      */
     Site findSiteByName(String name);
