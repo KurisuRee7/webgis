@@ -1,5 +1,4 @@
 package com.example.webgis.Service.SurroundSiteService;
-import com.example.webgis.Damain.Site;
 import com.example.webgis.Damain.SurroundSite.Accommodation;
 
 import java.util.List;
