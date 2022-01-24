@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * 金融控制层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 @RestController
 @RequestMapping(value = "/do/SurroundSite/Finance")
 public class FinanceController{

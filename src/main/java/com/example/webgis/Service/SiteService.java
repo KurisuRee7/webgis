@@ -3,6 +3,12 @@ import com.example.webgis.Damain.Site;
 
 import java.util.List;
 
+/**
+ * 地标服务层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface SiteService {
     /**
      * 新增地标

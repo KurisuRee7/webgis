@@ -7,6 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+/**
+ * 金融服务实现层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 @Service
 public class FinanceServiceImpl implements FinanceService {
     @Autowired

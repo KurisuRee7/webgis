@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Accommodation;
 
 import java.util.List;
 
+/**
+ * 住宿服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface AccommodationService {
     /**
      * 新增地标

@@ -1,5 +1,11 @@
 package com.example.webgis.Damain;
 
+/**
+ * 地标
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public class Site {
     private int id;
     private String code;

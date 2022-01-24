@@ -5,6 +5,12 @@ import org.apache.ibatis.annotations.*;
 import org.springframework.data.repository.query.Param;
 import java.util.List;
 
+/**
+ * 地标数据访问层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 @Mapper
 public interface SiteDao {
     /**

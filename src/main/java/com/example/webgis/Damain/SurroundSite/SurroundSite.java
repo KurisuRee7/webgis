@@ -1,5 +1,11 @@
 package com.example.webgis.Damain.SurroundSite;
 
+/**
+ * 周边地点
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public class SurroundSite {
     private String FID;
     private String name;

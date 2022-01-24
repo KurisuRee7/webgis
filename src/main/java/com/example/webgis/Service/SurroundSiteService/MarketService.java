@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Market;
 
 import java.util.List;
 
+/**
+ * 市场服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface MarketService {
     /**
      * 新增地标

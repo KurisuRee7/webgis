@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Entertain;
 
 import java.util.List;
 
+/**
+ * 娱乐服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface EntertainService {
     /**
      * 新增地标

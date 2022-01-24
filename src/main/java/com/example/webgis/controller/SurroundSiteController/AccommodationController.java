@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * 住宿控制层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 @RestController
 @RequestMapping(value = "/do/SurroundSite/Accommodation")
 public class AccommodationController{

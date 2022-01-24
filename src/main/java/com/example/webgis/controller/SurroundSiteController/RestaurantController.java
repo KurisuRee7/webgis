@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * 餐厅控制层
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 @RestController
 @RequestMapping(value = "/do/SurroundSite/Restaurant")
 public class RestaurantController{

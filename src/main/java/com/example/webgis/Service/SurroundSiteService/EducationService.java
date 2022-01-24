@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Education;
 
 import java.util.List;
 
+/**
+ * 教育服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface EducationService {
     /**
      * 新增地标

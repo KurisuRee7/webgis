@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Finance;
 
 import java.util.List;
 
+/**
+ * 金融服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface FinanceService {
     /**
      * 新增地标

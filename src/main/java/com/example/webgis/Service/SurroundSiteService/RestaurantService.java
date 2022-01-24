@@ -3,6 +3,12 @@ import com.example.webgis.Damain.SurroundSite.Restaurant;
 
 import java.util.List;
 
+/**
+ * 餐厅服务
+ *
+ * @author lidx
+ * @date 2022/01/24
+ */
 public interface RestaurantService {
     /**
      * 新增地标
