@@ -10,7 +10,7 @@ public interface FinanceDao {
     /**
      * 新增数据
      */
-    @Insert("insert into gz_finance(FID,Name,pyname,telephone,lng,lat,address) values (#{FID},#{Name},#{pyname},#{telephone},#{lng}),#{lat},,#{address}")
+    @Insert("insert into gz_finance(FID,Name,pyname,telephone,lng,lat,address) values (#{FID},#{Name},#{pyname},#{telephone},#{lng}),#{lat},#{address}")
     void addFin(Finance fin);
 
     /**
