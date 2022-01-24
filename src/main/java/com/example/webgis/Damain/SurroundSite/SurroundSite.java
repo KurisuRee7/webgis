@@ -8,6 +8,7 @@ public class SurroundSite {
     private double lng;
     private double lat;
     private String address;
+    public void setFID(String FID) {this.FID = FID;}
     public void setName(String name) {this.name = name;}
     public void setPyname(String pyname) {this.pyname = pyname;}
     public void setTelephone(String telephone) {this.telephone = telephone;}
@@ -21,5 +22,4 @@ public class SurroundSite {
     public double getLng() {return lng;}
     public double getLat() {return lat;}
     public String getAddress() {return address;}
-    public void setFID(String FID) {this.FID = FID;}
 }
